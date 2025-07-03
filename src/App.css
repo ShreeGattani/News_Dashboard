@@ -1,0 +1,49 @@
+body, #root {
+  min-height: 100vh;
+  min-width: 100vw;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.app-container {
+  width: 100vw;
+  height: 100vh;
+  max-width: 100vw;
+  max-height: 100vh;
+  margin: 0;
+  background: #fff;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0;
+  min-height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-container:hover {
+  box-shadow: 0 6px 32px 0 rgba(60, 72, 100, 0.12);
+}
+
+/* Remove old logo and card styles */
+.logo, .card, .read-the-docs, h1 {
+  display: none !important;
+}
+
+/* Add smooth transitions for interactive elements */
+button, a {
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+
+/* Responsive improvements */
+@media (max-width: 900px) {
+  .app-container {
+    max-width: 98vw;
+    padding: 1.5rem 0.5rem;
+    margin: 10px;
+  }
+}

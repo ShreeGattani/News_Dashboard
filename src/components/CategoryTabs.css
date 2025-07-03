@@ -1,0 +1,33 @@
+.category-tabs {
+  display: flex;
+  gap: 1.2rem;
+  margin: 1.7rem 0 1.2rem 0;
+  justify-content: center;
+}
+
+.category-tabs button {
+  background: #f4f6fb;
+  border: none;
+  padding: 0.7rem 1.7rem;
+  border-radius: 22px;
+  font-size: 1.08rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  color: #1a237e;
+  font-weight: 500;
+  box-shadow: 0 1px 4px rgba(26,35,126,0.07);
+  outline: none;
+}
+
+.category-tabs button.active {
+  background: linear-gradient(90deg, #ffd700 0%, #ffe066 100%);
+  color: #1a237e;
+  font-weight: bold;
+  box-shadow: 0 2px 8px rgba(255,215,0,0.13);
+}
+
+.category-tabs button:hover, .category-tabs button:focus {
+  background: #e3e7fa;
+  color: #3949ab;
+  box-shadow: 0 2px 8px rgba(26,35,126,0.10);
+} 

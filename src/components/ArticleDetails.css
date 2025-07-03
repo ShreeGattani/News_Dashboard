@@ -1,0 +1,142 @@
+.article-details__overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+  overflow-y: auto;
+}
+
+.article-details {
+  background: #fff;
+  border-radius: 16px;
+  max-width: 540px;
+  width: 100%;
+  padding: 2rem;
+  position: relative;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.article-details__close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #888;
+  cursor: pointer;
+}
+
+.article-details__img {
+  width: 100%;
+  max-height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.article-details__meta {
+  color: #888;
+  font-size: 0.98rem;
+  margin-bottom: 1rem;
+}
+
+.article-details__actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.article-details__read {
+  background: #ffd700;
+  color: #222;
+  padding: 0.5rem 1.2rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+
+.article-details__read:hover {
+  background: #ffa500;
+}
+
+.article-details__summarise {
+  background: #222;
+  color: #fff;
+  padding: 0.5rem 1.2rem;
+  border-radius: 6px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.article-details__summarise:hover {
+  background: #444;
+}
+
+.article-details__save {
+  background: #1a237e;
+  color: #fff;
+  padding: 0.5rem 1.2rem;
+  border-radius: 6px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 0.5rem;
+  transition: background 0.2s, color 0.2s;
+}
+
+.article-details__save:hover {
+  background: #ffd700;
+  color: #1a237e;
+}
+
+.article-details__summary {
+  background: #f8f8f8;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-top: 2rem;
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  color: #222;
+  font-size: 1.08rem;
+  line-height: 1.7;
+  transition: box-shadow 0.2s;
+}
+
+.article-details__summary h4 {
+  margin: 0 0 0.75rem 0;
+  color: #1a237e;
+  font-size: 1.18rem;
+  letter-spacing: 0.5px;
+}
+
+.article-details__summary p {
+  color: #222;
+  margin: 0;
+  white-space: pre-line;
+}
+
+.article-details__summary ul {
+  margin: 0.5rem 0 0 1.2rem;
+  padding: 0;
+  color: #222;
+  font-size: 1.05rem;
+}
+
+.article-details__summary li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+  list-style-type: disc;
+} 
