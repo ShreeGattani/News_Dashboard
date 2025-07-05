@@ -1,2 +1,2 @@
-# Weather_Dashboard
+# News_Dashboard
 
